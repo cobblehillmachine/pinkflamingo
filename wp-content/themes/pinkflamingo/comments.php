@@ -27,13 +27,18 @@
 
 	<?php // You can start editing here -- including this comment! ?>
 
+	<div class="left-cont">
+		<?php comment_form(); ?>
+	</div>
+
 	<?php if ( have_comments() ) : ?>
-		<h2 id="comments-title">
+	<div class="right-cont">
+		<div id="comments-title">
 			<?php
-				printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'twentyeleven' ),
+				printf( _n( '1 COMMENT', '%1$s COMMENTS', get_comments_number(), 'twentyeleven' ),
 					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
-		</h2>
+		</div>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-above">
@@ -70,9 +75,9 @@
 		if ( ! comments_open() && get_comments_number() ) : ?>
 		<p class="nocomments"><?php _e( 'Comments are closed.' , 'twentyeleven' ); ?></p>
 		<?php endif; ?>
-
+	</div>
 	<?php endif; // have_comments() ?>
+	
 
-	<?php comment_form(); ?>
 
 </div><!-- #comments -->

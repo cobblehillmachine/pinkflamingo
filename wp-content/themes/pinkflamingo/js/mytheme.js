@@ -3,6 +3,7 @@ $(document).ready(function() {
 	//footerHeight();
 	showCatDropdown();
 	$('.cat-dd ul li a').removeAttr('title');
+	setInputFieldFunctions();
 
 });
 
@@ -10,6 +11,23 @@ $(window).resize(function() {
 	//footerHeight();
 
 });
+
+function setInputFieldFunctions(){
+	$('.input-text').each(function(){
+     	if($(this).val() == "")
+       	$(this).val($(this).attr('default'));
+   	})
+
+   $('.input-text').focus(function(){
+     if($(this).val() == $(this).attr('default') || $(this).val() == '')
+       $(this).val('');
+
+   }).blur(function() {
+     if($(this).val() == $(this).attr('default') || $(this).val() == '')
+       $(this).val($(this).attr('default'));
+   });
+
+}
 
 function showCatDropdown() {	
 	$('.cat-dd .sort-title').toggle(function(){
@@ -25,7 +43,7 @@ function showCatDropdown() {
 function logoBoxPosition() {
 	$('#logo-cont img').each(function() {
 		$(this).on({
-			mouseenter: function(){$(this).siblings('.box-hover').fadeIn('slow');},
+			mouseenter: function(){$(this).siblings('.box-hover').fadeIn('fast');},
 			mouseleave: function(){$(this).siblings('.box-hover').fadeOut('fast');}
 		});
 	});

@@ -69,7 +69,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 
 /*PINK BLOG*/
 #primary {position:relative; width:900px; margin:auto; }
-#primary article {border-bottom:1px solid #ec3e5f; float:left; width:100%; padding-bottom:25px; margin-bottom:35px;}
+#primary article.post {border-bottom:1px solid #ec3e5f; float:left; width:100%; padding-bottom:25px; margin-bottom:35px;}
 /*#primary article:last-child {border:none; padding:0;}*/
 .small-cont {width:760px; position:relative; margin:auto;}
 #primary #content {float:left; width:100%; background:#fff; color:#000;}
@@ -85,17 +85,23 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #primary .entry-header, #primary .entry-content, #primary .entry-meta {float:left; width:100%; margin-bottom:15px;}
 #primary .cat-links a:hover {text-decoration:underline;}
 #primary .entry-content img {max-width:100%; height:auto;}
-#primary .pagination .page-numbers {float:left; margin-right:15px;}
-#primary .pagination .page-numbers:hover, #primary .pagination .page-numbers.current {color:#000;}
-#primary .entry-meta  a {color:#ec3e5f; font-size:13px; font-weight:500px; text-transform:uppercase;}
-#primary #comments {float:left; width:100%:}
+#primary .pagination .page-numbers, #primary #nav-single a {float:left; margin-right:15px;}
+#primary .pagination .page-numbers:hover, #primary .pagination .page-numbers.current, #primary #nav-single a:hover {color:#000;}
+#primary .entry-meta  a {color:#ec3e5f; font-size:15px; text-transform:uppercase; float:left; margin-right:45px; margin-top:25px;}
 
-
-
-
-
-
-
+/*SINGLE POST*/
+#primary #comments, #primary #comments .commentlist {float:left; width:100%;}
+#primary #comments .left-cont {float:left; width:370px;}
+#primary #comments .right-cont {float:right; width:365px;}
+#primary #comments #reply-title {font-size:15px; font-weight:500; float:left; width:100%; margin-bottom:25px;}
+#primary #comments form {float:left; width:100%; margin-bottom:40px;}
+#primary #comments input[type="text"], #primary #comments textarea {width:350px; background:#e8e8e8; padding:10px; height:22px; font: normal 14px "freight-sans-pro"; letter-spacing:1px; border:none; float:left; margin-bottom:10px;}
+#primary #comments textarea {height:130px; resize:none;}
+#primary #comments input[type="submit"] {background:#ec3e5f; border:none; color:#fff; font-size:14px; font-weight:500; float:left; text-align:center; padding:12px 0; width:90px; cursor:pointer;}
+#primary #comments #comments-title, #primary #comments .commentlist li .fn {color:#ec3e5f; font-size:15px; text-transform:uppercase; float:left; width:100%; margin-bottom:20px;}
+#primary #comments .commentlist li {margin-bottom:20px;}
+#primary #comments .commentlist li time {color:#8d8a8a; font-size:14px;}
+#primary #comments .commentlist li .fn {margin-bottom:5px;}
 
 
 
