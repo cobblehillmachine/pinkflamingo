@@ -1,0 +1,11 @@
+/*HEADER*/
+#header #logo {float:left; width:300px; height:64px; background:url(../images/linensunfurled-logo.jpg) no-repeat; margin-top:45px;}
+#header #nav li a:hover, #home .banner-text b {color:#ce8464 !important;}
+
+/*BOTTOM LOGOS*/
+#logo-cont .bottom-logos:nth-child(4) img {opacity:0.2; filter:alpha(opacity=20);}
+#logo-cont .bottom-logos:nth-child(4) .box-hover {display:none !important;}
+
+/*HOME*/
+#home .gallery-link {background:url(../images/linens-strip-bg.png) repeat;}
+#home .gallery-link .arrow {background-color:#ce8464;}

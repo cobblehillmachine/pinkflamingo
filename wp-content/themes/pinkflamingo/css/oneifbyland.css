@@ -1,0 +1,11 @@
+/*HEADER*/
+#header #logo {float:left; width:184px; height:100px; background:url(../images/oneifbyland-logo.jpg) no-repeat; margin-top:20px;}
+#header #nav li a:hover, #home .banner-text b {color:#3770a4 !important;}
+
+/*BOTTOM LOGOS*/
+#logo-cont .bottom-logos:nth-child(2) img {opacity:0.2; filter:alpha(opacity=20);}
+#logo-cont .bottom-logos:nth-child(2) .box-hover {display:none !important;}
+
+/*HOME*/
+#home .gallery-link {background:url(../images/oneifbyland-strip-bg.png) repeat;}
+#home .gallery-link .arrow {background-color:#2c3d4f;}

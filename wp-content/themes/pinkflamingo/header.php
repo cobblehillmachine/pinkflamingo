@@ -50,6 +50,7 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/pinkflamingo.css" />
 <?php global $blog_id;
 if( $blog_id == '2' ) { ?>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/varnadoreelectric.css" />
@@ -58,7 +59,6 @@ if( $blog_id == '2' ) { ?>
 <?php } else if( $blog_id == '4' ) { ?>
 	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/linensunfurled.css" />
 <?php }  ?>
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/pinkflamingo.css" />
 
 <!-- <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" /> -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -93,4 +93,13 @@ if( $blog_id == '2' ) { ?>
 			</div>
 		</div>
 		<div id="main-wrap">
+			<?php if (is_front_page()) { ?>
 
+				
+			<?php } ?>
+			
+			
+
+
+
+			

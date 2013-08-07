@@ -1,0 +1,19 @@
+/*HEADER*/
+#header #logo {float:left; width:292px; height:72px; background:url(../images/varnadoreelectric-logo.jpg) no-repeat; margin-top:45px;}
+#header #nav li a:hover, #home .banner-text b {color:#72933c !important;}
+
+/*BOTTOM LOGOS*/
+#logo-cont .bottom-logos:first-child img {opacity:0.2; filter:alpha(opacity=20);}
+#logo-cont .bottom-logos:first-child .box-hover {display:none !important;}
+#header #nav li {margin-right:40px; }
+
+
+
+
+
+
+
+
+
+
+
