@@ -27,6 +27,12 @@ function setInputFieldFunctions(){
        $(this).val($(this).attr('default'));
    });
 
+$('input, textarea').each(function(){
+    var $this = $(this);
+    $this.data('placeholder', $this.attr('placeholder'))
+         .focus(function(){$this.removeAttr('placeholder');})
+         .blur(function(){$this.attr('placeholder', $this.data('placeholder'));});
+});
 }
 
 function showCatDropdown() {	

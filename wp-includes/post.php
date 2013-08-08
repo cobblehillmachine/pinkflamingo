@@ -164,6 +164,30 @@ function create_initial_post_types() {
 }
 add_action( 'init', 'create_initial_post_types', 0 ); // highest priority
 
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+
+	$args1 = array(
+		'labels' => array(
+			'name' => __( 'Bios' ),
+			'singular_name' => __( 'Bio' )
+		),
+		'public' => true,
+		//'has_archive' => true,
+		'rewrite' => array('slug' => 'bios'),
+		'supports' => array( 'title', 'editor', 'thumbnail', 'post-thumbnails' ),
+		
+	);
+  
+  	register_post_type( 'Bios', $args1);
+	kd_mfi_the_featured_image( 'featured-image-2', 'bios' );
+  
+	//register_taxonomy_for_object_type('post_tag', 'offerings');
+	//register_taxonomy_for_object_type('category', 'recipes');
+
+}
+
+
 /**
  * Retrieve attached file path based on attachment ID.
  *

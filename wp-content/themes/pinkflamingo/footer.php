@@ -51,7 +51,7 @@
 		</div>
 		<div id="footer">
 			<div class="mid-cont">
-				<div id="copyright">&copy; 2013  PINK FLAMINGO GROUP</div>            
+				<a id="copyright" href="http://pinkflamingo.local">&copy; 2013  PINK FLAMINGO GROUP</a>            
 				<a id="footer-email" href="mailto:gopink@pinkflamingogroup.com">GOPINK@PINKFLAMINGOGROUP.COM</a>
 				<div id="social-cont">
 					<a class="social-link" href="#" target="_blank">pinterest</a>

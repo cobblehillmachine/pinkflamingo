@@ -112,6 +112,23 @@ function twentyeleven_setup() {
 
 	// This theme uses Featured Images (also known as post thumbnails) for per-post/per-page Custom Header images
 	add_theme_support( 'post-thumbnails' );
+	
+	if( class_exists( 'kdMultipleFeaturedImages' ) ) {
+
+	        $args = array(
+	                'id' => 'featured-image-2',
+	                'post_type' => 'page',      // Set this to post or page
+	                'labels' => array(
+	                    'name'      => 'Featured image 2',
+	                    'set'       => 'Set featured image 2',
+	                    'remove'    => 'Remove featured image 2',
+	                    'use'       => 'Use as featured image 2',
+	                )
+	        );
+
+	        new kdMultipleFeaturedImages( $args );
+	}
+	
 
 	// Add support for custom headers.
 	$custom_header_support = array(

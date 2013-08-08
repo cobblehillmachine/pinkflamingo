@@ -5,7 +5,8 @@ ul {list-style:none; padding:0; margin:0;}
 input {-webkit-appearance:none;}
 p {margin:0; display:inline-block;}
 ul, li, ol, fieldset {list-style:none; padding:0; margin:0; border:none;}
-input, select, textarea {-webkit-appearance:none; -webkit-border-radius:0px;}
+input, select, textarea {-webkit-appearance:none; -webkit-border-radius:0px; padding:10px; height:25px; font:normal 14px "freight-sans-pro"; letter-spacing:1px; border:none; float:left; resize:none;}
+input[type="submit"] {border:none; color:#fff; font-size:14px; font-weight:500; float:left; text-align:center; padding:12px 0; width:90px !important; cursor:pointer;}
 input[type="checkbox"] {-webkit-appearance:checkbox;}
 input[type="radio"] {-webkit-appearance:radio;}
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
@@ -30,16 +31,16 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #header #nav {float:right; background:#000; padding:18px 35px;}
 #header #nav li {float:left; margin-right:32px; }
 #header #nav li a {font-weight:500; text-transform:uppercase; font-size:13px;}
-#header #nav li:nth-child(1) a:hover, #blog-header ul.categories li:nth-child(1) a:hover, .varnadore-electric {color:#72933c;}
-#header #nav li:nth-child(2) a:hover, #blog-header ul.categories li:nth-child(2) a:hover, .one-if-by-land {color:#3770a4;}
-#header #nav li:nth-child(3) a:hover, #blog-header ul.categories li:nth-child(3) a:hover, .a-stuart-laurence-wedding {color:#4f90ce;}
-#header #nav li:nth-child(4) a:hover, #blog-header ul.categories li:nth-child(4) a:hover, .linens-unfurled {color:#ce8464;}
-#header #nav li:nth-child(5) a:hover, #blog-header ul.categories li:nth-child(5) a:hover, #header #nav li:nth-child(5).current-menu-item a {color:#ed4a68;}
+#header #nav li:nth-child(1) a:hover, .varnadore-electric {color:#72933c;}
+#header #nav li:nth-child(2) a:hover, .one-if-by-land {color:#3770a4;}
+#header #nav li:nth-child(3) a:hover, .a-stuart-laurence-wedding {color:#4f90ce;}
+#header #nav li:nth-child(4) a:hover, .linens-unfurled {color:#ce8464;}
+#header #nav li:nth-child(5) a:hover, #header #nav li:nth-child(5).current-menu-item a {color:#ed4a68;}
 #header #nav li:last-child {margin-right:0;}
 
 /*FOOTER*/
 #footer {background:#000; text-transform:uppercase; padding:20px 0; font-size:13px; height:18px;}
-#footer a {color:#707681;}
+#footer a, #footer #copyright:hover {color:#707681;}
 #footer #copyright {float:left; color:#ec3e5f; font-size:13px; margin-right:35px;}
 #footer #footer-email {float:left;}
 #footer #social-cont {float:right;}
@@ -94,7 +95,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #primary .cat-links a:hover {text-decoration:underline;}
 #primary .entry-content img {max-width:100%; height:auto;}
 #primary .pagination .page-numbers, #primary #nav-single a {float:left; margin-right:15px;}
-#primary .pagination .page-numbers:hover, #primary .pagination .page-numbers.current, #primary #nav-single a:hover {color:#000;}
+#primary .pagination .page-numbers:hover, #primary .pagination .page-numbers.current, #primary #nav-single a:hover, #blog-header ul.categories li a:hover {color:#000;}
 #primary .entry-meta  a {color:#ec3e5f; font-size:15px; text-transform:uppercase; float:left; margin-right:45px; margin-top:25px;}
 
 /*SINGLE POST*/
@@ -103,14 +104,39 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #primary #comments .right-cont {float:right; width:365px;}
 #primary #comments #reply-title {font-size:15px; font-weight:500; float:left; width:100%; margin-bottom:25px;}
 #primary #comments form {float:left; width:100%; margin-bottom:40px;}
-#primary #comments input[type="text"], #primary #comments textarea {width:350px; background:#e8e8e8; padding:10px; height:22px; font: normal 14px "freight-sans-pro"; letter-spacing:1px; border:none; float:left; margin-bottom:10px;}
-#primary #comments textarea {height:130px; resize:none;}
-#primary #comments input[type="submit"] {background:#ec3e5f; border:none; color:#fff; font-size:14px; font-weight:500; float:left; text-align:center; padding:12px 0; width:90px; cursor:pointer;}
+#primary #comments input[type="text"], #primary #comments textarea {width:350px; background:#e8e8e8; margin-bottom:10px;}
+#primary #comments textarea {height:130px;}
+#primary #comments input[type="submit"] {background:#ec3e5f;}
 #primary #comments #comments-title, #primary #comments .commentlist li .fn {color:#ec3e5f; font-size:15px; text-transform:uppercase; float:left; width:100%; margin-bottom:20px;}
 #primary #comments .commentlist li {margin-bottom:20px;}
 #primary #comments .commentlist li time {color:#8d8a8a; font-size:14px;}
 #primary #comments .commentlist li .fn {margin-bottom:5px;}
 
+/*CONTACT SECTION*/
+#contact {float:left; width:100%; background:#000; padding:50px 0 30px 0;}
+#contact #form-cont, #contact #form-cont p {float:right; width:620px;}
+#contact #form-cont span {float:left;}
+#contact #form-cont input {width:280px; margin-bottom:16px;}
+#contact #form-cont span:first-child, #contact #form-cont span:nth-child(3) {margin-right:18px;}
+#contact #form-cont textarea {width:600px; height:95px; margin-bottom:16px;}
+#contact #form-cont input[type="submit"] {background:#72933c; height:45px; float:right;}
+#contact span.wpcf7-not-valid-tip {color:#72933d;}
+#contact span.Message span.wpcf7-not-valid-tip {top:7%; left:1%;}
+#contact .left-cont {float:left; width:400px;}
+#contact .left-cont .title {font-size:22px; color:#fff; float:left; width:100%; margin-bottom:35px;}
+#contact .social-cont {float:left; width:100%;}
+#contact .social-cont .social-icon {float:left; margin-right:35px; height:60px; width:25px; background:url(../images/varnadore-social.png) no-repeat;}
+#contact .social-cont #pinterest:hover {background-position:0 -60px;}
+#contact .social-cont #instagram {background-position:-55px 0;}
+#contact .social-cont #instagram:hover {background-position:-55px -60px;}
+#contact .social-cont #facebook {background-position:-118px 0;}
+#contact .social-cont #facebook:hover {background-position:-118px -60px;}
+#contact .social-cont #flamingo {background-position:-180px 0;}
+#contact .social-cont #flamingo:hover {background-position:-180px -60px;}
+#contact .member-cont {float:left; width:100%; color:#fff; font-size:15px; margin-bottom:35px;}
+#contact .member-cont a:hover {text-decoration:underline;}
 
-
+/*ABOUT*/
+#about .about-banner {float:left; width:100%;}
+#about .about-banner img {width:100%; height:auto;}
 

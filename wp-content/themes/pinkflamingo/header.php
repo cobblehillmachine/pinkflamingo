@@ -93,10 +93,6 @@ if( $blog_id == '2' ) { ?>
 			</div>
 		</div>
 		<div id="main-wrap">
-			<?php if (is_front_page()) { ?>
-
-				
-			<?php } ?>
 			
 			
 
