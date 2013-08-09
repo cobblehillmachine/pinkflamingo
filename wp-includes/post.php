@@ -180,9 +180,23 @@ function create_post_type() {
 
   
   	register_post_type( 'Packages', $args1);
+
+	$args2 = array(
+		'labels' => array(
+			'name' => __( 'Gallery' ),
+			'singular_name' => __( 'Gallery' )
+		),
+		'public' => true,
+		//'has_archive' => true,
+		'rewrite' => array('slug' => 'gallery'),
+		'supports' => array( 'title', 'thumbnail' )
+	);
+
+  
+  	register_post_type( 'Gallery', $args2);
   
 	//register_taxonomy_for_object_type('post_tag', 'offerings');
-	//register_taxonomy_for_object_type('category', 'recipes');
+	register_taxonomy_for_object_type('category', 'gallery');
 
 }
 

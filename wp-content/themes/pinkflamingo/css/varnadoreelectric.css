@@ -1,6 +1,6 @@
 /*HEADER*/
 #header #logo {float:left; width:292px; height:72px; background:url(../images/varnadoreelectric-logo.jpg) no-repeat; margin-top:45px;}
-#header #nav li a:hover, #header #nav li.current-menu-item a, #home .banner-text b, #contact .member-cont a {color:#72933c !important;}
+#header #nav li a:hover, #header #nav li.current-menu-item a, #home .banner-text b, #contact .member-cont a, .cat-dd ul.categories li a:hover {color:#72933c !important;}
 #header #nav li:nth-child(4) a:hover {color:#ed4a68 !important;}
 
 /*BOTTOM LOGOS*/

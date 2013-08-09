@@ -28,7 +28,7 @@ if( $blog_id == '2' ) { ?>
 	</div>
 </div>
 <?php if( $blog_id !== '1' ) { ?>
-	<div class="home-bg" style="background: url('<?php echo $thumbnail; ?>') no-repeat;">
+	<div class="home-bg" >
 
 	
 	<a class="gallery-link" href="/gallery">

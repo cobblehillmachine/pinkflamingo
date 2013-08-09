@@ -63,6 +63,7 @@ if( $blog_id == '2' ) { ?>
 <!-- <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" /> -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/mytheme.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.masonry.min.js"></script>
 
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -82,7 +83,11 @@ if( $blog_id == '2' ) { ?>
 	wp_head();
 ?>
 </head>
-
+<?php $post_image_id = get_post_thumbnail_id($post_to_use->ID);
+		if ($post_image_id) {
+			$thumbnail = wp_get_attachment_image_src( $post_image_id, 'full', false);
+			if ($thumbnail) (string)$thumbnail = $thumbnail[0];
+} ?>
 <body <?php body_class(); ?> id="<?php echo  strtolower(str_replace(' ','-',get_the_title())); ?>">
 		<div id="header">
 			<div class="mid-cont">
@@ -92,7 +97,7 @@ if( $blog_id == '2' ) { ?>
 				</div>
 			</div>
 		</div>
-		<div id="main-wrap">
+		<div id="main-wrap" <?php if(is_front_page()) { ?> style="background: url('<?php echo $thumbnail; ?>') repeat fixed;"<?php  } ?>>
 			
 			
 

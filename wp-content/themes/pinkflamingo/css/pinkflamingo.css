@@ -16,9 +16,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 :-ms-input-placeholder {color: #000; opacity:1; filter:alpha(opacity=100);}
 
 .mid-cont {position:relative; width:1100px; margin:auto;}
-.banner-text {text-align:center; background:#000; border-top:1px solid #fff; color:#fff; padding:60px 0;}
+.banner-text {text-align:center; background:#000; border-top:1px solid #fff; color:#fff; padding:60px 0; float:left; width:100%;}
 .banner-text .quote {font-size:22px; text-transform:uppercase; font-weight:500; line-height:32px;}
-#header, #main-wrap, #footer, #logo-cont, .banner-text {float:left; width:100%;}
+#header, #main-wrap, #footer, #logo-cont {float:left; width:100%; display:none;}
 #main-wrap {background:#000;}
 
 /*FONTS*/
@@ -35,7 +35,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #header #nav li:nth-child(2) a:hover, .one-if-by-land {color:#3770a4;}
 #header #nav li:nth-child(3) a:hover, .a-stuart-laurence-wedding {color:#4f90ce;}
 #header #nav li:nth-child(4) a:hover, .linens-unfurled {color:#ce8464;}
-#header #nav li:nth-child(5) a:hover, #header #nav li:nth-child(5).current-menu-item a {color:#ed4a68;}
+#header #nav li:nth-child(5) a:hover, #header #nav li:nth-child(5).current-menu-item a, .category #header #nav li:nth-child(5) a, .single #header #nav li:nth-child(5) a {color:#ed4a68;}
 #header #nav li:last-child {margin-right:0;}
 
 /*FOOTER*/
@@ -77,6 +77,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 .flexslider {margin-bottom:0 !important;}
 
 /*PINK BLOG*/
+.blog #main-wrap, .category #main-wrap, .single #main-wrap {background:#000 !important;}
 #primary {position:relative; width:900px; margin:auto; }
 #primary article.post {border-bottom:1px solid #ec3e5f; float:left; width:100%; padding-bottom:25px; margin-bottom:35px;}
 /*#primary article:last-child {border:none; padding:0;}*/
@@ -84,10 +85,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #primary #content {float:left; width:100%; background:#fff; color:#000;}
 #primary #blog-header, #nav-below, #nav-single {float:left; width:100%; background:#ec3e5f; padding:22px 0 24px 0; color:#fff; font-weight:500;}
 #primary #blog-header .title {float:left; font-size:22px;}
-#primary #blog-header .sort-title {float:left; font-size:16px; background:url(../images/dd-arrows.png) no-repeat 90px -15px; width:105px; cursor:pointer; margin-top:5px;}
-#primary #blog-header .cat-dd {float:right;}
-#primary #blog-header ul.categories {position:absolute; margin-top:54px; text-align:right; background:#ec3e5f; font-size:14px; text-transform:uppercase; color:#fff; padding:15px 25px; min-width:225px; margin-left:-165px; z-index:10; display:none;}
-#primary #blog-header ul.categories li {margin-bottom:15px;}
+.sort-title {float:left; font-size:16px; background:url(../images/dd-arrows.png) no-repeat 90px -15px; width:105px; cursor:pointer; margin-top:5px;}
+.cat-dd {float:right;}
+.cat-dd ul.categories {position:absolute; margin-top:54px; text-align:right; background:#ec3e5f; font-size:14px; text-transform:uppercase; color:#fff; padding:15px 25px; min-width:225px; margin-left:-165px; z-index:10; display:none;}
+.cat-dd ul.categories li {margin-bottom:15px;}
 #primary .entry-title {font-weight:700; font-size:26px; color:#ec3e5f; text-transform:uppercase; float:left; width:100%; margin:0 0 7px 0;}
 #primary article:first-child .entry-title {margin-top:45px;}
 #primary .entry-meta, #primary .cat-links {font-size:13px; font-weight:500px; text-transform:uppercase; float:left; width:100%; margin-bottom:5px;}
@@ -161,6 +162,22 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #about #packages-cont .contact-link {float:left; font-size:13px; font-style:italic;}
 #about #packages-cont .contact-link:hover {text-decoration:underline;}
 #about #packages-cont .package-info {float:right; width:800px; line-height:22px;}
+
+/*GALLERY*/
+#gallery-cont {float:left; width:100%; background:#000; padding:30px 0; color:#fff;}
+#gallery-cont .title {font-size:22px; float:left; margin-bottom:25px; text-transform:uppercase;}
+#gallery-cont .cat-dd ul.categories {background:#000;}
+#gallery-cont .images-cont {float:left; width:100%;}
+#gallery-cont .images-cont img {width:350px; height:auto;}
+#gallery-cont .gallery-images {margin-bottom:15px;}
+/*#gallery-cont .gallery-images:nth-child(3n+3) {margin-right:0;}*/
+
+
+
+
+
+
+
 
 
 
