@@ -4,6 +4,10 @@ $(document).ready(function() {
 	showCatDropdown();
 	$('.cat-dd ul li a').removeAttr('title');
 	setInputFieldFunctions();
+	$('.member-img').live({
+		mouseenter: function(){$(this).children('.photo1').hide(); $(this).children('.photo2').show();},
+		mouseleave: function(){$(this).children('.photo1').show(); $(this).children('.photo2').hide();}
+	});
 
 });
 

@@ -137,6 +137,32 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #contact .member-cont a:hover {text-decoration:underline;}
 
 /*ABOUT*/
-#about .about-banner {float:left; width:100%;}
+#about .about-banner, #about .member-cont:nth-child(1) .main-cont, #about #packages-cont {float:left; width:100%;}
 #about .about-banner img {width:100%; height:auto;}
+#about #members {float:left; width:100%; background:#fff; text-align:center; overflow:hidden;}
+#about .member-cont {float:none; width:520px; background:#fff; color:#000; display:inline-block; padding:35px 0;}
+#about .member-cont .main-cont {float:left; width:520px;}
+#about .member-cont:nth-child(1) {background:#000; color:#fff; width:100%;}
+#about .member-cont:nth-child(1) .member-img {float:left; width:350px;}
+#about .member-cont:nth-child(1) .member-info-cont {width:695px;}
+#about .member-cont .member-img {float:left; width:160px;}
+#about .member-cont .member-info-cont {float:right; width:315px; text-align:left;}
+#about .member-cont .member-img img {width:100%; height:auto;}
+#about .member-cont .member-img  .photo2 {display:none;}
+#about .member-cont:nth-child(2n+2) .main-cont {margin-left:-28px;}
+#about .member-cont:nth-child(2n+3) .main-cont {margin-left:28px;}
+#about .member-cont .member-name {float:left; width:100%; margin-bottom:25px; font-weight:500; font-size:22px; text-transform:uppercase;}
+#about .member-cont .member-name span, #about #packages-cont .package-name span {font-weight:700; color:#72933c;}
+#about #packages-cont {background:#000; padding:50px 0; color:#fff;}
+#about #packages-cont .title {font-size:22px; width:100%; margin-bottom:10px;}
+#about #packages-cont .package {float:left; width:100%; border-top:1px solid #4d4d4d; padding:45px 0 25px 0;}
+#about #packages-cont .package .left {float:left; width:240px;}
+#about #packages-cont .package-name {float:left; margin-bottom:15px; font-weight:500; font-size:22px; text-transform:uppercase;}
+#about #packages-cont .contact-link {float:left; font-size:13px; font-style:italic;}
+#about #packages-cont .contact-link:hover {text-decoration:underline;}
+#about #packages-cont .package-info {float:right; width:800px; line-height:22px;}
+
+
+
+
 

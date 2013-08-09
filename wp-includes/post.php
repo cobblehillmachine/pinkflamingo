@@ -169,18 +169,17 @@ function create_post_type() {
 
 	$args1 = array(
 		'labels' => array(
-			'name' => __( 'Bios' ),
-			'singular_name' => __( 'Bio' )
+			'name' => __( 'Packages' ),
+			'singular_name' => __( 'Package' )
 		),
 		'public' => true,
 		//'has_archive' => true,
-		'rewrite' => array('slug' => 'bios'),
-		'supports' => array( 'title', 'editor', 'thumbnail', 'post-thumbnails' ),
-		
+		'rewrite' => array('slug' => 'packages'),
+		'supports' => array( 'title', 'editor' )
 	);
+
   
-  	register_post_type( 'Bios', $args1);
-	kd_mfi_the_featured_image( 'featured-image-2', 'bios' );
+  	register_post_type( 'Packages', $args1);
   
 	//register_taxonomy_for_object_type('post_tag', 'offerings');
 	//register_taxonomy_for_object_type('category', 'recipes');

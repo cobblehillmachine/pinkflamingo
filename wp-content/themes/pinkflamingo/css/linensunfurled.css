@@ -1,6 +1,6 @@
 /*HEADER*/
 #header #logo {float:left; width:300px; height:64px; background:url(../images/linensunfurled-logo.jpg) no-repeat; margin-top:45px;}
-#header #nav li a:hover, #home .banner-text b, #contact span.wpcf7-not-valid-tip, #contact .member-cont a {color:#ce8464 !important;}
+#header #nav li a:hover, #header #nav li.current-menu-item a, #home .banner-text b, #contact span.wpcf7-not-valid-tip, #contact .member-cont a, #about .member-cont .member-name span {color:#ce8464 !important;}
 #header #nav li:nth-child(4) a:hover {color:#ed4a68 !important;}
 
 /*BOTTOM LOGOS*/
