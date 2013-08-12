@@ -171,8 +171,11 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #gallery-cont .images-cont img {width:350px; height:auto;}
 #gallery-cont .gallery-images {margin-bottom:15px;}
 /*#gallery-cont .gallery-images:nth-child(3n+3) {margin-right:0;}*/
-
-
+#gallery #lightbox {top:30px !important;}
+#gallery #outerImageContainer, #gallery #imageDataContainer {background:none;}
+#gallery #jqlb_closelabel {height:45px;}
+#gallery #prevLink {background:url(/wp-content/plugins/wp-lightbox-2/styles/images/prev.gif) no-repeat scroll left 50% transparent; margin-left:-60px;}
+#gallery #nextLink {background:url(/wp-content/plugins/wp-lightbox-2/styles/images/next.gif) no-repeat scroll right 50% transparent; margin-right:-60px;}
 
 
 

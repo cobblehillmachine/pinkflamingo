@@ -7,7 +7,8 @@
  * @since Twenty Eleven 1.0
  */
 ?>
-
+<?php global $blog_id;
+if( $blog_id == '1' ) { ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
 
@@ -56,3 +57,11 @@
 			<a href="<?php the_permalink(); ?>/#respond">POST A COMMENT</a>
 		</footer><!-- .entry-meta -->
 	</article><!-- #post-<?php the_ID(); ?> -->
+<?php } else { ?>
+		<?php $post_image_id = get_post_thumbnail_id($post_to_use->ID);
+				if ($post_image_id) {
+					$thumbnail = wp_get_attachment_image_src( $post_image_id, 'full', false);
+					if ($thumbnail) (string)$thumbnail = $thumbnail[0];
+		} ?>
+		<a class="gallery-images <?php foreach((get_the_category()) as $category) {echo strtolower(str_replace(' ','-',$category->cat_name)); } ?>" rel="lightbox" href="<?php echo $thumbnail; ?>"><?php the_post_thumbnail('full'); ?></a>
+<?php } ?>

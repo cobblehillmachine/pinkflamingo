@@ -716,3 +716,16 @@ if ( ! function_exists( 'my_pagination' ) ) :
 		) );
 	}
 endif;
+
+add_filter('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+  if(is_category() || is_tag()) {
+    $post_type = get_query_var('post_type');
+	if($post_type)
+	    $post_type = $post_type;
+	else
+	    $post_type = array('nav_menu_item','post','gallery');
+    $query->set('post_type',$post_type);
+	return $query;
+    }
+}

@@ -9,6 +9,8 @@
 
 get_header(); ?>
 
+<?php global $blog_id;
+if( $blog_id == '1' ) { ?>
 <div id="primary">
 	<div id="blog-header">
 		<div class="small-cont">
@@ -42,5 +44,32 @@ get_header(); ?>
 		<?php endif; ?>
 	</div>
 </div>
+<?php } else { ?>
+	<div id="gallery-cont">
+		<div class="mid-cont">
+			<div id="<?php echo strtolower(str_replace(' ','-',$sub_cat->name)); ?>" class="title medium">GALLERY</div>
+			<?php 
+			    echo '<div class="cat-dd"><div class="sort-title">SORT BY</div>';
+			    		    $sub_cats = get_categories(array('orderby' => 'ID', 'order' => 'ASC'));
+			    		    if($sub_cats) {
+			    		        echo '<ul class="categories">';
+			    		        foreach($sub_cats as $sub_cat) {
+			    		        echo '<li class="cat-name"><a href="/category/'.strtolower(str_replace(' ','-',$sub_cat->name)).'">'.$sub_cat->name.'</a></li>';
+			    		        }
+			    		        echo '</ul>';
+			    		    echo '</div>';
+			    		    }
 
+			?>
+			<div class="images-cont">
+				<?php if ( have_posts() ) : ?>
+							<?php while ( have_posts() ) : the_post(); ?>
+								<?php get_template_part( 'content', get_post_format() ); ?>
+							<?php endwhile; ?>			
+				<?php endif; ?>
+			</div>
+
+		</div>
+	</div>
+<?php }  ?>
 <?php get_footer(); ?>

@@ -9,7 +9,7 @@
 		    		    if($sub_cats) {
 		    		        echo '<ul class="categories">';
 		    		        foreach($sub_cats as $sub_cat) {
-		    		        echo '<li id="'.$sub_cat->name.'" class="cat-name"><a href="#">'.$sub_cat->name.'</a></li>';
+		    		        echo '<li class="cat-name"><a id="'.strtolower(str_replace(' ','-',$sub_cat->name)).'" href="/category/'.strtolower(str_replace(' ','-',$sub_cat->name)).'">'.$sub_cat->name.'</a></li>';
 		    		        }
 		    		        echo '</ul>';
 		    		    echo '</div>';
@@ -18,7 +18,7 @@
 		?>
 		<!-- <div class="cat-dd">
 			<div class="sort-title" >SORT BY</div>
-			<ul class="categories"><?php $categories = wp_list_categories(array('child_of' => 6 , 'orderby' => 'ID', 'order' => 'ASC')); echo $categories; ?></u>
+			<ul class="categories"><?php $categories = wp_list_categories(array('orderby' => 'ID', 'order' => 'ASC')); echo $categories; ?></u>
 		</div> -->
 		<div class="images-cont">
 			<?php query_posts(array('post_type' => 'gallery', 'order' => 'ASC', 'posts_per_page' => 100  )); ?>

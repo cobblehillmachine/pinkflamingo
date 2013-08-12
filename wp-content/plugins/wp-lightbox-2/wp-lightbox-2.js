@@ -64,7 +64,7 @@
                 opts.imageArray = parser(opts.jsonData);
             }
             var outerImage = '<div id="outerImageContainer"><div id="imageContainer"><iframe id="lightboxIframe" /><img id="lightboxImage"><div id="hoverNav"><a href="javascript://" title="' + opts.strings.prevLinkTitle + '" id="prevLink"></a><a href="javascript://" id="nextLink" title="' + opts.strings.nextLinkTitle + '"></a></div><div id="loading"><a href="javascript://" id="loadingLink"><div id="jqlb_loading"></div></a></div></div></div>';
-            var imageData = '<div id="imageDataContainer" class="clearfix"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav">';
+            var imageData = '<div id="imageDataContainer" class="clearfix"><div id="imageData"><div id="bottomNav">';
             if (opts.displayHelp) {
                 imageData += '<span id="helpDisplay">' + opts.strings.help + '</span>';
             }
