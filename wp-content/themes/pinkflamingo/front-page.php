@@ -28,14 +28,11 @@ if( $blog_id == '2' ) { ?>
 	</div>
 </div>
 <?php if( $blog_id !== '1' ) { ?>
-	<div class="home-bg" >
 
-	
 	<a class="gallery-link" href="/gallery">
 		<span>view our gallery</span>
 		<div class="arrow"></div>
 	</a>
-	</div>
 	<div id="contact">
 		<div class="mid-cont">
 			<div class="left-cont">
@@ -63,10 +60,10 @@ if( $blog_id == '2' ) { ?>
 				<?php endwhile; endif; wp_reset_postdata(); ?>
 				
 				<div class="social-cont">
-					<a id="pinterest" class="social-icon" href="#" target="_blank"></a>
-					<a id="instagram" class="social-icon" href="#" target="_blank"></a>
-					<a id="facebook" class="social-icon" href="#" target="_blank"></a>
-					<a id="flamingo" class="social-icon" href="#" target="_blank"></a>
+					<a id="pinterest" class="social-icon" href="http://pinterest.com/pinkflamingogrp" target="_blank"></a>
+					<a id="instagram" class="social-icon" href="http://instagram.com/pinkflamingogroup" target="_blank"></a>
+					<a id="facebook" class="social-icon" href="https://www.facebook.com/PinkFlamingoGroup" target="_blank"></a>
+					<a id="flamingo" class="social-icon" href="http://pinkflamingogroup.com/pink-blog/" target="_blank"></a>
 				</div>
 			</div>
 			<div id="form-cont">

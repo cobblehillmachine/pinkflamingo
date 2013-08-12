@@ -54,9 +54,9 @@
 				<a id="copyright" href="http://pinkflamingo.local">&copy; 2013  PINK FLAMINGO GROUP</a>            
 				<a id="footer-email" href="mailto:gopink@pinkflamingogroup.com">GOPINK@PINKFLAMINGOGROUP.COM</a>
 				<div id="social-cont">
-					<a class="social-link" href="#" target="_blank">pinterest</a>
-					<a class="social-link" href="#" target="_blank">instagram</a>
-					<a class="social-link" href="#" target="_blank">facebook</a>
+					<a class="social-link" href="http://pinterest.com/pinkflamingogrp" target="_blank">pinterest</a>
+					<a class="social-link" href="http://instagram.com/pinkflamingogroup" target="_blank">instagram</a>
+					<a class="social-link" href="https://www.facebook.com/PinkFlamingoGroup" target="_blank">facebook</a>
 				</div>
 			</div>
 		</div>

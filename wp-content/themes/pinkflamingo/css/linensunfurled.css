@@ -9,7 +9,7 @@
 
 /*HOME*/
 #home .gallery-link {background:url(../images/linens-strip-bg.png) repeat;}
-#home .gallery-link .arrow, #contact #form-cont input[type="submit"] {background-color:#ce8464;}
+#home .gallery-link .arrow, #contact #form-cont input[type="submit"], #not-found-cont .home-link {background-color:#ce8464;}
 #contact .social-cont .social-icon {background:url(../images/linensunfurled-social.png) no-repeat;}
 
 
