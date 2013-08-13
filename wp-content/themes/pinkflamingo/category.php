@@ -17,7 +17,7 @@ if( $blog_id == '1' ) { ?>
 			<div class="title">PINK BLOG</div>
 			<div class="cat-dd">
 				<div class="sort-title" >SORT BY</div>
-				<ul class="categories"><?php $categories = wp_list_categories(array('child_of' => 5 , 'orderby' => 'ID', 'order' => 'ASC')); echo $categories; ?></u>
+				<ul class="categories"><?php $categories = wp_list_categories(array('child_of' => 5 , 'orderby' => 'ID', 'order' => 'ASC', 'show_option_all' => 'VIEW ALL')); echo $categories; ?></u>
 			</div>
 		</div>
 	</div>
@@ -56,6 +56,7 @@ if( $blog_id == '1' ) { ?>
 			    		        foreach($sub_cats as $sub_cat) {
 			    		        echo '<li class="cat-name"><a href="/category/'.strtolower(str_replace(' ','-',$sub_cat->name)).'">'.$sub_cat->name.'</a></li>';
 			    		        }
+								echo '<li><a id="view-all" href="/gallery/">VIEW ALL</a></li>';
 			    		        echo '</ul>';
 			    		    echo '</div>';
 			    		    }

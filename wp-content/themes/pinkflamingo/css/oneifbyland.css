@@ -1,6 +1,6 @@
 /*HEADER*/
 #header #logo {float:left; width:184px; height:100px; background:url(../images/oneifbyland-logo.jpg) no-repeat; margin-top:20px;}
-#header #nav li a:hover, #header #nav li.current-menu-item a, #home .banner-text b, #contact span.wpcf7-not-valid-tip, #contact .member-cont a, #about .member-cont .member-name span, #about #packages-cont .package-name span, .cat-dd ul.categories li a:hover {color:#3770a4 !important;}
+#header #nav li a:hover, #header #nav li.current-menu-item a, #home .banner-text b, #contact span.wpcf7-not-valid-tip, #contact .member-cont a, #about .member-cont .member-name span, #about #packages-cont .package-name span, .cat-dd ul.categories li a:hover, #home #header #nav li.current-menu-item a:hover {color:#3770a4 !important;}
 #header #nav li:nth-child(4) a:hover {color:#ed4a68 !important;}
 
 /*BOTTOM LOGOS*/
@@ -12,3 +12,4 @@
 #home .gallery-link .arrow {background-color:#2c3d4f;}
 #contact #form-cont input[type="submit"], #not-found-cont .home-link {background:#436283;}
 #contact .social-cont .social-icon {background:url(../images/oneifbyland-social.png) no-repeat;}
+#contact .member-cont a:hover {color:#4B6175 !important;}

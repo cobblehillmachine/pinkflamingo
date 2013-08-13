@@ -1,6 +1,6 @@
 /*HEADER*/
 #header #logo {float:left; width:300px; height:64px; background:url(../images/linensunfurled-logo.jpg) no-repeat; margin-top:45px;}
-#header #nav li a:hover, #header #nav li.current-menu-item a, #home .banner-text b, #contact span.wpcf7-not-valid-tip, #contact .member-cont a, #about .member-cont .member-name span, #about #packages-cont .package-name span, .cat-dd ul.categories li a:hover {color:#ce8464 !important;}
+#header #nav li a:hover, #header #nav li.current-menu-item a, #home .banner-text b, #contact span.wpcf7-not-valid-tip, #contact .member-cont a, #about .member-cont .member-name span, #about #packages-cont .package-name span, .cat-dd ul.categories li a:hover, #home #header #nav li.current-menu-item a:hover {color:#ce8464 !important;}
 #header #nav li:nth-child(4) a:hover {color:#ed4a68 !important;}
 
 /*BOTTOM LOGOS*/
@@ -11,6 +11,7 @@
 #home .gallery-link {background:url(../images/linens-strip-bg.png) repeat;}
 #home .gallery-link .arrow, #contact #form-cont input[type="submit"], #not-found-cont .home-link {background-color:#ce8464;}
 #contact .social-cont .social-icon {background:url(../images/linensunfurled-social.png) no-repeat;}
+#contact .member-cont a:hover {color:#DD9F8A !important;}
 
 
 

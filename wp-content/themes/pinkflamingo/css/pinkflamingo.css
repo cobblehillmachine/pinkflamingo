@@ -37,6 +37,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #header #nav li:nth-child(4) a:hover, .linens-unfurled {color:#ce8464;}
 #header #nav li:nth-child(5) a:hover, #header #nav li:nth-child(5).current-menu-item a, .category #header #nav li:nth-child(5) a, .single #header #nav li:nth-child(5) a {color:#ed4a68;}
 #header #nav li:last-child {margin-right:0;}
+#home #header #nav li.current-menu-item a {color:#fff !important;}
 
 /*FOOTER*/
 #footer {background:#000; text-transform:uppercase; padding:20px 0; font-size:13px; height:18px;}
@@ -135,7 +136,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #contact .social-cont #flamingo {background-position:-180px 0;}
 #contact .social-cont #flamingo:hover {background-position:-180px -60px;}
 #contact .member-cont {float:left; width:100%; color:#fff; font-size:15px; margin-bottom:35px;}
-#contact .member-cont a:hover {text-decoration:underline;}
 
 /*ABOUT*/
 #about .about-banner, #about .member-cont:nth-child(1) .main-cont, #about #packages-cont {float:left; width:100%;}

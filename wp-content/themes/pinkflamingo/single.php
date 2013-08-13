@@ -14,7 +14,7 @@ get_header(); ?>
 			<div class="title">PINK BLOG</div>
 			<div class="cat-dd">
 				<div class="sort-title" >SORT BY</div>
-				<ul class="categories"><?php $categories = wp_list_categories(array('child_of' => 5 , 'orderby' => 'ID', 'order' => 'ASC')); echo $categories; ?></u>
+				<ul class="categories"><?php $categories = wp_list_categories(array('child_of' => 5 , 'orderby' => 'ID', 'order' => 'ASC', 'show_option_all' => 'VIEW ALL')); echo $categories; ?></u>
 			</div>
 		</div>
 	</div>
