@@ -162,6 +162,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #about #packages-cont .contact-link {float:left; font-size:13px; font-style:italic;}
 #about #packages-cont .contact-link:hover {text-decoration:underline;}
 #about #packages-cont .package-info {float:right; width:800px; line-height:22px;}
+#about #packages-cont .package-info p {margin-bottom:20px;}
 
 /*GALLERY*/
 #gallery-cont {float:left; width:100%; background:#000; padding:30px 0; color:#fff;}
