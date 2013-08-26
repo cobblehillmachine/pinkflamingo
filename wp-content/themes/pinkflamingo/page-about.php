@@ -23,7 +23,7 @@
 	</div>
 	<div id="packages-cont">
 		<div class="mid-cont">
-			<div class="title bold">PACKAGES</div>
+			<div class="title bold">DESIGN TECHNIQUES</div>
 			<?php query_posts(array('post_type' => 'packages', 'order' => 'ASC', 'posts_per_page' => 30  )); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="package">

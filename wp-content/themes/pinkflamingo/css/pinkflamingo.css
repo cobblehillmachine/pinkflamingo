@@ -1,4 +1,4 @@
-body {margin:0; padding:0; width:100%; min-width:1150px; font-family: "freight-sans-pro",sans-serif; font-style: normal; font-weight: 400; font-size:15px; letter-spacing:1px;}
+body {margin:0; padding:0; width:100%; min-width:1150px; font-family: "freight-sans-pro",sans-serif; font-style: normal; font-weight: 400; font-size:18px; letter-spacing:1px;}
 a {text-decoration:none; color:#fff;}
 a img {border:0;}
 ul {list-style:none; padding:0; margin:0;}
@@ -74,7 +74,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #home .gallery-link .arrow {display:inline-block; background:url(../images/home-strip-arrow.png) no-repeat center center #72933c; padding:12px 16px; margin-top:35px; width:37px; height:19px;}
 
 /*SLIDER*/
-.metaslider {width:100%; max-width:100% !important;}
+.metaslider {width:100%; max-width:100% !important; background:#fff;}
 .flexslider {margin-bottom:0 !important;}
 
 /*PINK BLOG*/
