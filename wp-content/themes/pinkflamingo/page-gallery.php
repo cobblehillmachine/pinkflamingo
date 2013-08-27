@@ -18,10 +18,7 @@
 		    		    }
 		
 		?>
-		<!-- <div class="cat-dd">
-			<div class="sort-title" >SORT BY</div>
-			<ul class="categories"><?php $categories = wp_list_categories(array('orderby' => 'ID', 'order' => 'ASC')); echo $categories; ?></u>
-		</div> -->
+
 		<div id="masonry-images" class="images-cont">
 			<?php query_posts(array('post_type' => 'gallery', 'orderby' => 'rand', 'posts_per_page' => 100  )); ?>
 
