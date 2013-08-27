@@ -176,7 +176,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #gallery #jqlb_closelabel {height:45px;}
 #gallery #prevLink {background:url(/wp-content/plugins/wp-lightbox-2/styles/images/prev.gif) no-repeat scroll left 50% transparent; margin-left:-60px;}
 #gallery #nextLink {background:url(/wp-content/plugins/wp-lightbox-2/styles/images/next.gif) no-repeat scroll right 50% transparent; margin-right:-60px;}
-#imageDetails {float:left; width:100%; background:#000; text-align:center; height:50px; color:#fff;}
+#imageDetails {float:left; width:100%; background:none; text-align:center; height:50px; color:#fff;}
 #imageDetails #caption {display:inline-block; margin-top:24px; font-size:20px; /*font-weight:bold;*/ text-transform:uppercase;}
 
 /*404*/
