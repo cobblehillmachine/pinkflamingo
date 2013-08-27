@@ -160,7 +160,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #about #packages-cont .package-info {float:right; width:800px; line-height:22px;}
 #about #packages-cont .package-info p {margin-bottom:20px;}
 #party-btn {float:left; width:100%; margin-bottom:20px;}
-#party-btn .party {float:right; color:#fff; background:#72933c; font-size:17px; padding:15px 20px; cursor:pointer;}
+#party-btn .party {float:right; color:#fff; background:#72933c; font-size:17px; padding:15px 20px; cursor:pointer; width:90px;}
 #party-btn .party-off {display:none;}
 
 /*GALLERY*/
@@ -170,14 +170,12 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #gallery-cont .images-cont {float:left; width:100%;}
 #gallery-cont .images-cont img {width:350px; height:auto; margin-bottom:15px;}
 #gallery-cont .gallery-images {margin-right:15px;}
-/*#gallery-cont .gallery-images:nth-child(3n+3) {margin-right:0;}*/
-/*#gallery #lightbox {top:30px !important;}*/
 #gallery #outerImageContainer, #gallery #imageDataContainer {background:none;}
 #gallery #jqlb_closelabel {height:45px;}
 #gallery #prevLink {background:url(/wp-content/plugins/wp-lightbox-2/styles/images/prev.gif) no-repeat scroll left 50% transparent; margin-left:-60px;}
 #gallery #nextLink {background:url(/wp-content/plugins/wp-lightbox-2/styles/images/next.gif) no-repeat scroll right 50% transparent; margin-right:-60px;}
 #imageDetails {float:left; width:100%; background:none; text-align:center; height:50px; color:#fff;}
-#imageDetails #caption {display:inline-block; margin-top:24px; font-size:20px; /*font-weight:bold;*/ text-transform:uppercase;}
+#imageDetails #caption {display:inline-block; margin-top:24px; font-size:20px; text-transform:uppercase;}
 
 /*404*/
 #not-found-cont {float:left; width:100%; background:#000; text-align:center; padding:60px 0;}
