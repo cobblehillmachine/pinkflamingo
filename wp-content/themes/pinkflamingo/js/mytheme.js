@@ -6,10 +6,7 @@ $(document).ready(function() {
 	showCatDropdown();
 	$('.cat-dd ul li a').removeAttr('title');
 	setInputFieldFunctions();
-	$('.member-img').live({
-		mouseenter: function(){$(this).children('.photo1').hide(); $(this).children('.photo2').show();},
-		mouseleave: function(){$(this).children('.photo1').show(); $(this).children('.photo2').hide();}
-	});
+
 	var container = $('.images-cont');
 	container.imagesLoaded( function(){
 	  container.masonry({ 	
@@ -20,6 +17,7 @@ $(document).ready(function() {
 		});
 	});
 	$('#gallery-cont .categories li:first-child').remove();
+	partyOn();
 	// $('#gallery-cont .categories .cat-name a').on({
 	// 	click: function(e){ e.preventDefault(); var route = $(this).attr('href'); $('.images-cont').load(route+' #masonry-images'); }
 	// });
@@ -78,40 +76,14 @@ function logoBoxPosition() {
 		});
 	});
 	
-	// $('.box-hover').each(function() {
-	// 	$(this).on({
-	// 		//mouseenter: function(){$(this).siblings('.box-hover').fadeIn('slow');},
-	// 		mouseleave: function(){$(this).fadeOut('slow');}
-	// 	});
-	// });
 	$('#logo-cont .box-hover').each(function() {
 		var boxH = $(this).height();
 		$(this).css({'marginTop': -boxH -40});
 		
 	});
-	// $('.bottom-logos img').each(function(){
-	// 	var logoH = $(this).height();
-	// 	$(this).css({'height': logoH});
-	// });
-	// $('.bottom-logos').each(function(){
-	// 	var logoH = $(this).children('img').height();
-	// 	var boxH = $(this).children('.box-hover').height();
-	// 	$(this).css({'height': logoH + boxH});
-	// });
+
 }
 
-// function footerHeight(){
-// 	var footer = $('#footer'); 
-// 	var winH = $(window).height();
-// 	var winW = $(window).width();
-// 	var contentH = $(document).height();
-// 	var filler = winH -contentH;
-// 	var newH = winH - 58;
-// 		if(contentH < 1180 && winW < 1550) {
-// 			footer.css({'height': filler});
-// 		}
-// 		$('body').css({'height':contentH});
-// }
 function footerHeight(){
 var footer = $('#footer'),
 windowHeight = $(window).height(),
@@ -120,4 +92,13 @@ height = (windowHeight > combinedHeight) ? windowHeight - footer.offset().top : 
 // height = windowHeight - footer.offset().top;
 
 footer.css({'height':height});
+}
+
+function partyOn() {
+	$('#party-btn .party-on').live({
+		click: function() {$('.member-img .photo1').hide(); $('.member-img .photo2').show(); $('.party-on').hide(); $('.party-off').show(); }
+	});
+	$('#party-btn .party-off').live({
+		click: function() {$('.member-img .photo1').show(); $('.member-img .photo2').hide(); $('.party-on').show(); $('.party-off').hide(); }
+	});
 }

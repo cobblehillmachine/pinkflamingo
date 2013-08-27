@@ -319,8 +319,8 @@
             //assumes updateDetails have been called earlier!
             $("#imageData").show();
             $('#caption').show();
-            //$('#imageDataContainer').slideDown(400);
-            //$("#imageDetails").hide().fadeIn(400);		
+            $('#imageDataContainer').slideDown(400);
+            $("#imageDetails").hide().fadeIn(400);		
             $('#loading').hide();
             if (opts.resizeSpeed > 0) {
                 $('#lightboxImage').fadeIn("fast");

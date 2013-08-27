@@ -13,3 +13,5 @@
 #contact #form-cont input[type="submit"], #not-found-cont .home-link {background:#436283;}
 #contact .social-cont .social-icon {background:url(../images/oneifbyland-social.png) no-repeat;}
 #contact .member-cont a:hover {color:#4B6175 !important;}
+
+#home #footer {height:18px !important;}
