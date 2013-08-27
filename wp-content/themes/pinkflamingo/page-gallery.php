@@ -5,7 +5,7 @@
 		<div class="title medium"><?php the_title(); ?></div>
 		<?php 
 		    echo '<div class="cat-dd"><div class="sort-title">SORT BY</div>';
-		    		    $sub_cats = get_categories(array('orderby' => 'ID', 'order' => 'ASC'));
+		    		    $sub_cats = get_categories();
 		    		    if($sub_cats) {
 		    		        echo '<ul class="categories">';
 							
