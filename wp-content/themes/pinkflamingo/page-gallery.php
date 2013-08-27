@@ -3,21 +3,7 @@
 <div id="gallery-cont">
 	<div class="mid-cont">
 		<div class="title medium"><?php the_title(); ?></div>
-		<?php 
-		    echo '<div class="cat-dd"><div class="sort-title">SORT BY</div>';
-		    		    $sub_cats = get_categories(array('orderby' => 'ID', 'order' => 'ASC',));
-		    		    if($sub_cats) {
-		    		        echo '<ul class="categories">';
-							
-		    		        foreach($sub_cats as $sub_cat) {
-		    		        echo '<li class="cat-name"><a id="'.strtolower(str_replace(' ','-',$sub_cat->name)).'" href="/category/'.strtolower(str_replace(' ','-',$sub_cat->name)).'">'.$sub_cat->name.'</a></li>';
-		    		        }
-							echo '<li><a id="view-all" href="/gallery/">VIEW ALL</a></li>';
-		    		        echo '</ul>';
-		    		    echo '</div>';
-		    		    }
-		
-		?>
+
 
 		<div id="masonry-images" class="images-cont">
 			<?php query_posts(array('post_type' => 'gallery', 'orderby' => 'rand', 'posts_per_page' => 100  )); ?>
